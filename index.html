@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Resume</title>
+
+		<meta name="description" content="A Simple Slide">
+		<meta name="author" content="BILLY HO">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-transition="slide">
+					<h2>个人简历</h2>
+					<h3>Resume</h3>
+				</section>
+
+				<section data-transition="slide">
+					<h2>教育经历</h2>
+					<p>
+						2011–至今 中山大学, 软件学院, 软件工程, 计算机应用软件方向. GPA: 3.6/5.0.
+					</p>
+				</section>
+
+				
+
+				<section>
+					<h2>专业技能</h2>
+					<ul>
+						<li class="fragment">CET-6 565</li>
+						<li class="fragment">掌握 C/C++/Objective-C 等语言</li>
+						<li class="fragment">熟练使用 Vim/Xcode 等开发工具</li>
+						<li class="fragment">熟悉 Linux, MacOS 下的开发环境</li>
+						<li class="fragment">能够使用 git 等版本管理工具进行团队开发</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>获奖情况</h2>
+					<ul>
+						<li class="fragment">2012-2013 学年中山大学软件学院二等奖学金</li>
+						<li class="fragment">2013 中山大学ACM程序设计竞赛三等奖</li>
+						<li class="fragment">2014 Mathematical Contest In Modeling, Successful Participant</li>
+					</ul>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>项目经历</h2>		
+					</section>
+
+					
+					
+					<section>
+						<h2>品课志 Picourse</h2>
+						<div style="height:605px;width:480px;float:left;"><img width="360" height="605" src="image/3.jpg" ></div>
+						<div style="height:600px;width:350px;float:left;"><p>品课志 Picourse 为一个面向企业 HR 的应用, 提供各种企业内部培训课程的分类浏览, 课程详细介绍以及讲师介绍等信息, 帮助企业 HR 找到适合自己员工的课程.
+						</p></div>
+						
+					</section>
+
+					<section>
+						<h2>Cofunder</h2>
+						<p>CoFunder 为国内一个类似 Kickstarter, 点名时间的众筹类网站的 iOS 客户端. 用户可 以使用此应用浏览各种创意项目, 并进行投资.
+						</p>
+					</section>
+					<section>
+						<h2>Priests and Devils</h2>
+						<p>牧师与魔鬼 Priests and Devils 是一个基于 Cocos2d-x 引擎的 iOS 小游戏. 游戏的目标是 让玩家帮助牧师和魔鬼渡河, 并保证牧师不会被魔鬼吃掉.
+						</p>
+						<img width="600" height="400" src="image/2.jpg" >
+					</section>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
